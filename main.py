@@ -19,7 +19,7 @@ def get_container_id():
         # print(container["Names"])
         if container["Names"][0] == "/twitch-watcher":
             os.environ["CONTAINER_ID"] = container["Id"]
-            set_key(find_dotenv(), key_to_set="CONTAINER_ID", value_to_set=os.environ["CONTAINER_ID"])
+            # set_key(find_dotenv(), key_to_set="CONTAINER_ID", value_to_set=os.environ["CONTAINER_ID"])
             break
         else:
             continue
