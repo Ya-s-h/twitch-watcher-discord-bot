@@ -7,6 +7,6 @@ COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
-COPY main.py
+COPY . .
 
 CMD ["echo", "It is running"]
