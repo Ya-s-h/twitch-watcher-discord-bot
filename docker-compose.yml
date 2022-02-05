@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    image: "twitch-watcher-bot:latest"
+    restart: unless-stopped
+    environment:
+      DISCORD_TOKEN: "OTM5NDI5MDE0MzYyMjY3NjY4.Yf4tcg.4qbOdP4wUeAMctzLxcs7xH4hZoY"
+      PORTAINER_URL: http://20.124.252.209:9000
+      PORTAINER_PASSWORD: port2003
+      PORTAINER_USERNAME: admin
+      CONTAINER_ID: "0dd5f973f529f5d51b3707c7d576aa6edcef8a8a86891e8200de199e16448b30"
+
