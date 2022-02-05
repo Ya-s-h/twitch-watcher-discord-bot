@@ -9,5 +9,4 @@ RUN python -m pip install -r requirements.txt
 WORKDIR /app
 COPY . .
 
-CMD ["echo", "It is working"]
 CMD ["python", "main.py"]
