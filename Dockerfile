@@ -8,3 +8,5 @@ RUN python -m pip install -r requirements.txt
 
 WORKDIR /app
 COPY package*.json ./
+
+CMD ["echo", "It is running"]
